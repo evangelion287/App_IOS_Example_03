@@ -14,6 +14,7 @@
 		04B8B4E627CA6A9500E9E656 /* SideMenuSwiftTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8B4E527CA6A9500E9E656 /* SideMenuSwiftTutorialTests.swift */; };
 		04B8B4F027CA6A9500E9E656 /* SideMenuSwiftTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8B4EF27CA6A9500E9E656 /* SideMenuSwiftTutorialUITests.swift */; };
 		04B8B4F227CA6A9500E9E656 /* SideMenuSwiftTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8B4F127CA6A9500E9E656 /* SideMenuSwiftTutorialUITestsLaunchTests.swift */; };
+		D3BD40612845C3A200AB8FD4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BD40602845C3A100AB8FD4 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		04B8B4EB27CA6A9500E9E656 /* SideMenuSwiftTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideMenuSwiftTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B8B4EF27CA6A9500E9E656 /* SideMenuSwiftTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuSwiftTutorialUITests.swift; sourceTree = "<group>"; };
 		04B8B4F127CA6A9500E9E656 /* SideMenuSwiftTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuSwiftTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3BD40602845C3A100AB8FD4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		04B8B4D327CA6A9200E9E656 /* SideMenuSwiftTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				D3BD405F2845C38A00AB8FD4 /* Views */,
 				04B8B4D427CA6A9200E9E656 /* SideMenuSwiftTutorialApp.swift */,
 				04B8B4D627CA6A9200E9E656 /* ContentView.swift */,
 				04B8B4D827CA6A9500E9E656 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				04B8B4F127CA6A9500E9E656 /* SideMenuSwiftTutorialUITestsLaunchTests.swift */,
 			);
 			path = SideMenuSwiftTutorialUITests;
+			sourceTree = "<group>";
+		};
+		D3BD405F2845C38A00AB8FD4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3BD40602845C3A100AB8FD4 /* Login.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BD40612845C3A200AB8FD4 /* Login.swift in Sources */,
 				04B8B4D727CA6A9200E9E656 /* ContentView.swift in Sources */,
 				04B8B4D527CA6A9200E9E656 /* SideMenuSwiftTutorialApp.swift in Sources */,
 			);

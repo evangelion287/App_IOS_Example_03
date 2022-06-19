@@ -1,20 +1,20 @@
 //
-//  Login.swift
+//  SideMenuOptionView.swift
 //  SideMenuSwiftTutorial
 //
-//  Created by ALBERTO on 30/05/22.
+//  Created by ALBERTO on 19/06/22.
 //
 
 import SwiftUI
 
-struct Login: View {
+struct SideMenuOptionView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct Login_Previews: PreviewProvider {
+struct SideMenuOptionView_Previews: PreviewProvider {
     static var previews: some View {
-        Login()
+        SideMenuOptionView()
     }
 }

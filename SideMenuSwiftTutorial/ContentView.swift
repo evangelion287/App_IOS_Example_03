@@ -8,27 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowing = false
+    
     var body: some View {
-        
         NavigationView{
-            ZStack{
-                Color(.white)
-                
-                Text("Hello World")
-                    .padding()
-            }
             
-            .navigationBarItems(leading: Button(action:{
-                print("DBUG: Show menu here...")
+            ZStack {
                 
-            },label: {
-                Image(systemName: "list.bullet")
-                    .foregroundColor(.black)
-            }))
-            .navigationTitle("Home")
+                if isShowing {
+                    SideMenuView(isShowing: $isShowing)
+                }
+                
+                HomeView()
+                    .cornerRadius(isShowing ? 20: 10)
+                    .offset(x: isShowing ? 300: 0, y: isShowing ? 100: 0)
+                    .scaleEffect(isShowing ? 0.8: 1)
+                    .navigationBarItems(leading: Button(action: {
+                        
+                        withAnimation(.spring()){
+                        
+                            isShowing.toggle()
+                        
+                        }
+                        
+                    }, label: {
+                        Image(systemName: "list.bullet")
+                            .foregroundColor(.black)
+                    }))
+                    .navigationTitle("Home")
+        
+            }
         }
-        
-        
     }
 }
 
@@ -37,3 +47,17 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+struct HomeView: View{
+    
+        var body: some View {
+            VStack{
+                    Color(.white)
+                    
+                    Text("Hello Alb")
+                        .padding()
+                }
+            }
+}
+

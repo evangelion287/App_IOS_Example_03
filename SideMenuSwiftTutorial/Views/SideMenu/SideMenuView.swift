@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SideMenuView: View {
+    @Binding var isShowing: Bool
+    
     var body: some View {
         
         ZStack{
@@ -16,15 +18,29 @@ struct SideMenuView: View {
                 .ignoresSafeArea()
             
             VStack{
-                    SideMenuHeaderView()
+               
+                //Text("HOLA")
+                
+                SideMenuHeaderView(isShowing: $isShowing)
                     .foregroundColor(.white)
+                    //.frame(width: 240)
+                
+                ForEach(0..<9){ _ in
+                    SideMenuOptionView()
+                }
+            
+                
+                Spacer()
             }
+            
+            
         }
+        .navigationBarHidden(true)
     }
 }
 
 struct SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuView()
+        SideMenuView(isShowing: .constant(true))
     }
 }
